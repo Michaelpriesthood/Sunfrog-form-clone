@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: Rubik-Light, sans-serif;
+}
+
+@font-face {
+  font-family: Rubik-Light;
+  src: url(../fonts/Rubik-Light.ttf);
+}
+
+#wrapper {
+  display: flex;
+  overflow: hidden;
+}
+
+.bg {
+  background: url('../img/manager_bg.jpg') no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 200%;
+  margin-right: 1rem;
+}
+
+#login-register {
+  padding: 0 2rem;
+}
+
+#login-register .title {
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+#login-register form input {
+  width: 100%;
+  margin-bottom: 2rem;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  outline: none;
+  color: #565656;
+}
+
+::placeholder {
+  font-size: 0.9rem;
+  font-family: Rubik-Light;
+  display: block;
+}
+
+.s-check {
+  max-height: 75px;
+  margin-right: 2rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: #ffbb44;
+  padding: 0.8rem;
+  border: 1px solid #ffbb44;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  background: #ffbb44;
+  color: #fff;
+  transition: all 0.4s ease-in;
+}
+
+.f-pswd {
+  display: block;
+  color: #565656;
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.f-pswd span {
+  margin-right: 0.3rem;
+}
+
+hr {
+  color: #565656;
+  opacity: 0.2;
+  margin: 1.3rem 0;
+}
+
+.signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.signup p {
+  margin-right: 0.5rem;
+}
+
+.signup a {
+  color: #000;
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  .bg {
+    display: none;
+  }
+
+  #login-register {
+    margin: auto;
+  }
+}
